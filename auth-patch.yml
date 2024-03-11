@@ -1,0 +1,19 @@
+﻿apiVersion: v1
+data:
+  mapRoles: |
+    - rolearn: aarn:aws:iam::040112606736:role/service-role/codebuild-dockerpush-1-service-role
+      username: build
+      groups:
+        - system:masters
+    - groups:
+      - system:bootstrappers
+      - system:nodes
+      rolearn: arn:aws:iam::040112606736:role/eksctl-window-cluster-nodegroup-te-NodeInstanceRole-J36v5P9qTJHH
+      username: system:node:{{EC2PrivateDNSName}}
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2024-03-11T09:23:22Z"
+  name: aws-auth
+  namespace: kube-system
+  resourceVersion: '1219'
+  uid: '6ca5ed32-03b1-40e6-b36a-bb7f19b758ef'
