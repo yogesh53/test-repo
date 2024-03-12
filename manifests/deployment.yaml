@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: my-eks-pipeline-deployment
-          image: 040112606736.dkr.ecr.us-east-1.amazonaws.com/docker-registry:2024-03-12.10.09.22.7b89ffee
+          image: CONTAINER_IMAGE
           ports:
             - containerPort: 80
