@@ -1,7 +1,7 @@
 ﻿apiVersion: v1
 data:
   mapRoles: |
-    - rolearn: arn:aws:iam::040112606736:role/service-role/codebuild-march-build-service-role
+    - rolearn: arn:aws:iam::040112606736:role/EksCodeBuildKubectlRole
       username: build
       groups:
         - system:masters
@@ -15,5 +15,5 @@ metadata:
   creationTimestamp: "2024-03-11T09:23:22Z"
   name: aws-auth
   namespace: kube-system
-  resourceVersion: '22256'
+  resourceVersion: '226462'
   uid: '6ca5ed32-03b1-40e6-b36a-bb7f19b758ef'
