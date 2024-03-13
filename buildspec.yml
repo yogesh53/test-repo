@@ -40,7 +40,7 @@ phases:
       - export AWS_SESSION_TOKEN="$(echo ${CREDENTIALS} | jq -r '.Credentials.SessionToken')"
       - export AWS_EXPIRATION=$(echo ${CREDENTIALS} | jq -r '.Credentials.Expiration')
       ## added from chatgpt
-      - export AWS_DEFAULT_REGION=us-west-2 # Replace with your desired AWS region
+      - export AWS_DEFAULT_REGION=us-east-1 # Replace with your desired AWS region
       - aws sts get-caller-identity --output text  # Verify assumed role
       # Updating kubectl with your EKS Cluster              
       - echo "Update Kube Config configuration"      
