@@ -5,12 +5,12 @@ metadata:
 spec:
   selector:
     app: my-eks-pipeline-deployment
- ports:
+  ports:
   - protocol: TCP
     port: 80
     targetPort: 80
     nodePort: 31100
-type: NodePort
+  type: NodePort
 
 ---
 apiVersion: apps/v1
