@@ -2,7 +2,7 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: window-cluster
+  name: march-cluster
   region: us-east-1
   version: "1.28"
 
@@ -10,7 +10,7 @@ KubernetesNetworkConfig:
   IpFamily: ipv4
 
 managedNodeGroups:
-  - name: test-group
+  - name: march-group
     instanceType: t3.small
     desiredCapacity: 1
     minSize: 1
