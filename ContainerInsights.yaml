@@ -69,7 +69,7 @@ data:
       "logs": {
         "metrics_collected": {
           "kubernetes": {
-            "cluster_name": "eksinsights",
+            "cluster_name": "march-cluster",
             "metrics_collection_interval": 60
           }
         },
